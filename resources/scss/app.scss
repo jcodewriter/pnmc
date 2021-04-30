@@ -1,0 +1,17 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,200');
+
+// FontAwesome
+@import url('https://use.fontawesome.com/releases/v5.11.2/css/all.css');
+
+@import '~bootstrap/scss/bootstrap';
+
+@import 'variables';
+
+@import '~now-ui-dashboard/assets/scss/now-ui-dashboard';
+@import '~datatables-responsive/css/responsive.bootstrap';
+//@import '~datatables-responsive/css/responsive.dataTables';
+@import 'mixins/dark_mode';
+
+@import 'common';
+@import 'dark_mode';

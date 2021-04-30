@@ -1,0 +1,9 @@
+.theme-dark {
+    @include dark-mode;
+}
+
+@media (prefers-color-scheme: dark) {
+    body:not(.theme-light) {
+        @include dark-mode;
+    }
+}

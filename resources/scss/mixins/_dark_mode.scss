@@ -1,0 +1,135 @@
+@mixin dark-mode {
+    .wrapper {
+        color: $white;
+        background-color: $primary-bg-dark;
+    }
+
+    a, a:hover {
+        color: $teal;
+    }
+
+    .breadcrumb {
+        background-color: $secondary-bg-dark;
+        color: $white;
+
+        > .breadcrumb-item {
+            &.active {
+                color: $white;
+            }
+        }
+    }
+
+    .content {
+        background-color: $primary-bg-dark;
+    }
+
+    .footer {
+        color: $white;
+        background-color: $primary-bg-dark;
+    }
+
+    .table {
+        color: inherit;
+    }
+
+    .card:not(.card-white){
+        background-color: $secondary-bg-dark;
+        .card-header{
+            color: $white;
+            a[data-toggle="collapse"]{
+                color: $white;
+            }
+        }
+        //.card-header .card-title, .card-body .card-title{
+        //    color: $secondary-bg-dark;
+        //}
+
+        .card-body{
+            //.card-category, .card-description{
+            //    color: $secondary-bg-dark;
+            //}
+
+            .info {
+                .info-title {
+                    color: $white;
+                }
+            }
+        }
+
+        &.nav-pills .nav-item .nav-link {
+            //color: $nav-gray;
+            background-color: hsla(0, 0%, 87%, .3);
+            &:not(.active):hover{
+                background: hsla(0, 0%, 87%, .5);
+            }
+            &.active{
+                color: $secondary-bg-dark;
+
+            }
+        }
+
+        .card{
+            box-shadow: none;
+        }
+
+        &.card-plain{
+            background: $transparent-bg;
+            box-shadow: none;
+        }
+    }
+
+    .card.card-white{
+        .card-header .card-title, .card-body .card-title{
+            color: $secondary-bg-dark;
+        }
+
+        .card-body{
+            .card-category, .card-description{
+                color: $secondary-bg-dark;
+            }
+        }
+    }
+
+
+    .asset-icon {
+        background-color: $white;
+    }
+
+    .text-primary,
+    a.text-primary:focus, a.text-primary:hover {
+        color: $white !important;
+    }
+
+    .page-item {
+        &.active .page-link {
+            color: $white;
+            background-color: #204065;
+            border-color: #204065;
+        }
+
+        &.disabled .page-link {
+            color: $gray-600;
+            background-color: transparent;
+            border-color: $light-gray
+        }
+
+        .page-link {
+            color: $white;
+            background-color: transparent;
+
+            &:hover {
+                color: $gray-600;
+                background-color: $light-gray;
+                border-color: $light-gray
+            }
+        }
+    }
+
+    .form-control {
+        color: $white;
+
+        &:focus {
+            color: #2c2c2c;
+        }
+    }
+}

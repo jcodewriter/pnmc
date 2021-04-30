@@ -1,0 +1,712 @@
+@media (max-width: 575.98px) {
+    .navbar {
+        &.bg-white {
+            background-color: $orange-color !important;
+            color: $white !important;
+
+            &:not(.navbar-transparent) a:not(.dropdown-item):not(.btn)
+            {
+                color: $white !important;
+            }
+
+            .navbar-toggler {
+                .navbar-toggler-bar {
+                    background-color: $white !important;
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        img {
+            width: 200px;
+            height: 36px;
+
+            &.admin
+            {
+                width: 160px;
+                height: 28px;
+            }
+        }
+    }
+}
+
+.card {
+    .dropdown {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}
+
+.card-chart-large {
+    .chart-area {
+        position: relative;
+        height: 50vh !important;
+    }
+}
+
+.text-transform-reset {
+    text-transform: none !important;
+}
+
+.card-stats {
+    .statistics {
+        position: relative;
+        text-align: center;
+        padding: 15px 0;
+
+        .stats-title {
+            margin-bottom: 5px;
+            color: $dark-gray;
+            font-weight: 600;
+        }
+    }
+
+    [class*=col-] {
+        .statistics {
+            &:after {
+                position: absolute;
+                right: 0;
+                top: 20px;
+                width: 1px;
+                height: calc(100% - 40px);
+                content: "";
+                background: $default-states-color;
+            }
+        }
+
+        &:last-child {
+            .statistics {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.info {
+    .info-title {
+        margin: 15px 0 5px;
+        padding: 0 15px;
+        color: $black-color;
+        font-weight: 700;
+    }
+}
+
+.footer {
+    padding-top: 0 !important;
+}
+
+.header-image
+{
+    background-color: $white;
+}
+
+.panel-header-xs {
+    height: 62px;
+    padding-top: 40px;
+    padding-bottom: 0 !important;
+}
+
+.panel-header-s {
+    height: 86px;
+    padding-top: 40px;
+    padding-bottom: 0 !important;
+}
+
+.panel-header-m {
+    height: 175px;
+}
+
+.panel-header-l {
+    height: 280px;
+}
+
+.panel-header-lg {
+    height: 420px;
+}
+
+.main-panel {
+    &-no-sidebar {
+        float: none;
+        width: 100%;
+    }
+
+    > .content {
+        &-no-header-chart {
+            margin-top: 0 !important;
+        }
+    }
+}
+
+table
+{
+    &.table-bordered
+    {
+        &.dataTable
+        {
+            tbody
+            {
+                td
+                {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    > thead {
+        > tr {
+            > th {
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+body {
+    font-size: 0.875em;
+}
+
+.count-up
+{
+    .value
+    {
+        font-size: 1.40625rem;
+    }
+}
+
+.asset-icon
+{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+
+    &--medium
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+    &--big
+    {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+table.dataTable {
+    clear: both;
+    margin-top: 6px!important;
+    margin-bottom: 6px!important;
+    max-width: none!important;
+    //border-collapse: separate!important;
+    border: 0
+}
+
+table.table-bordered {
+    &--dataTable {
+        border: 0
+    }
+}
+
+table.dataTable td,
+table.dataTable th {
+    box-sizing: content-box
+}
+
+table.dataTable td.dataTables_empty,
+table.dataTable th.dataTables_empty {
+    text-align: center
+}
+
+table.dataTable.nowrap td,
+table.dataTable.nowrap th {
+    white-space: nowrap
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+    font-weight: 400;
+    text-align: left;
+    white-space: nowrap
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    width: 75px;
+    display: inline-block
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: right
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: left
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: .5em;
+    display: inline-block;
+    width: auto
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 8px;
+    white-space: nowrap
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+    margin: 0;
+    white-space: nowrap;
+    text-align: right
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin: 2px 0;
+    white-space: nowrap;
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important
+}
+
+div.dataTables_wrapper div.dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -26px;
+    text-align: center;
+    padding: 1em 0
+}
+
+table.dataTable thead>tr>td.sorting,
+table.dataTable thead>tr>td.sorting_asc,
+table.dataTable thead>tr>td.sorting_desc,
+table.dataTable thead>tr>th.sorting,
+table.dataTable thead>tr>th.sorting_asc,
+table.dataTable thead>tr>th.sorting_desc {
+    padding-right: 30px
+}
+
+table.dataTable thead>tr>td:active,
+table.dataTable thead>tr>th:active {
+    outline: none
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_desc_disabled {
+    cursor: pointer;
+    position: relative
+}
+
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+    color: #eee
+}
+
+div.dataTables_scrollHead table.dataTable {
+    margin-bottom: 0!important
+}
+
+div.dataTables_scrollBody table {
+    border-top: none;
+    margin-top: 0!important;
+    margin-bottom: 0!important
+}
+
+div.dataTables_scrollBody table thead .sorting:after,
+div.dataTables_scrollBody table thead .sorting_asc:after,
+div.dataTables_scrollBody table thead .sorting_desc:after {
+    display: none
+}
+
+div.dataTables_scrollBody table tbody tr:first-child td,
+div.dataTables_scrollBody table tbody tr:first-child th {
+    border-top: none
+}
+
+div.dataTables_scrollFoot table {
+    margin-top: 0!important;
+    border-top: none
+}
+
+@media screen and (max-width:767px) {
+    div.dataTables_wrapper div.dataTables_filter,
+    div.dataTables_wrapper div.dataTables_info,
+    div.dataTables_wrapper div.dataTables_length,
+    div.dataTables_wrapper div.dataTables_paginate {
+        text-align: center
+    }
+}
+
+table.dataTable.table-condensed>thead>tr>th {
+    padding-right: 20px
+}
+
+table.dataTable.table-condensed .sorting:after,
+table.dataTable.table-condensed .sorting_asc:after,
+table.dataTable.table-condensed .sorting_desc:after {
+    top: 6px;
+    right: 6px
+}
+
+table.table-bordered.dataTable td,
+table.table-bordered.dataTable th {
+    border-left-width: 0
+}
+
+table.table-bordered.dataTable td:last-child,
+table.table-bordered.dataTable th:last-child {
+    border-right-width: 0
+}
+
+div.dataTables_scrollHead table.table-bordered,
+table.table-bordered.dataTable tbody td,
+table.table-bordered.dataTable tbody th {
+    //border-bottom-width: 0
+}
+
+div.table-responsive>div.dataTables_wrapper>div.row {
+    margin: 0
+}
+
+div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:first-child {
+    padding-left: 0
+}
+
+div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:last-child {
+    padding-right: 0
+}
+
+table.dataTable .btn-simple.btn-icon {
+    padding: 3px
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc_disabled:after {
+    position: relative;
+    display: inline-block;
+    bottom: 1px;
+    right: -7px;
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    opacity: .8;
+    font-size: 12px
+}
+
+table.dataTable thead .disabled-sorting.sorting:after,
+table.dataTable thead .disabled-sorting.sorting_asc:after,
+table.dataTable thead .disabled-sorting.sorting_asc_disabled:after,
+table.dataTable thead .disabled-sorting.sorting_desc:after,
+table.dataTable thead .disabled-sorting.sorting_desc_disabled:after {
+    display: none
+}
+
+table.dataTable thead .sorting:after {
+    opacity: .4;
+    content: "\f0dc"
+}
+
+table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    top: 2px
+}
+
+table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    top: -3px
+}
+
+table.dataTable>tbody>tr>td,
+table.dataTable>tbody>tr>th,
+table.dataTable>tfoot>tr>td,
+table.dataTable>tfoot>tr>th,
+table.dataTable>thead>tr>td,
+table.dataTable>thead>tr>th {
+    padding: 12px!important;
+    outline: 0;
+    min-width: 50px;
+    border-right: 0;
+    //border-bottom: 0
+}
+
+table.dataTable>thead>tr>th {
+    border: none
+}
+
+.dataTables_paginate a {
+    outline: 0
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.child,
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dataTables_empty,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th.child {
+    cursor: default!important
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dataTables_empty:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th.child:before {
+    display: none!important
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+    top: 50%;
+    margin-top: -9px;
+    left: 4px;
+    height: 18px;
+    width: 18px;
+    display: block;
+    position: absolute;
+    color: $success-color;
+    border: 0 solid $white;
+    border-radius: 14px;
+    box-shadow: 0 0 3px $light-black;
+    box-sizing: content-box;
+    text-align: center;
+    font-family: Courier New, Courier, monospace;
+    line-height: 18px;
+    content: "+";
+    background-color: $white;
+    text-indent: initial !important;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
+    content: "-";
+    color: #ff3636
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr.child td:before {
+    display: none
+}
+
+table.dataTable.dtr-inline.collapsed.compact>tbody>tr>td:first-child,
+table.dataTable.dtr-inline.collapsed.compact>tbody>tr>th:first-child {
+    padding-left: 27px
+}
+
+table.dataTable.dtr-inline.collapsed.compact>tbody>tr>td:first-child:before,
+table.dataTable.dtr-inline.collapsed.compact>tbody>tr>th:first-child:before {
+    top: 5px;
+    left: 4px;
+    height: 14px;
+    width: 14px;
+    border-radius: 14px;
+    line-height: 14px;
+    text-indent: 3px
+}
+
+table.dataTable.dtr-column>tbody>tr>td.control,
+table.dataTable.dtr-column>tbody>tr>th.control {
+    position: relative;
+    cursor: pointer
+}
+
+table.dataTable.dtr-column>tbody>tr>td.control:before,
+table.dataTable.dtr-column>tbody>tr>th.control:before {
+    top: 50%;
+    left: 50%;
+    height: 16px;
+    width: 16px;
+    margin-top: -10px;
+    margin-left: -10px;
+    display: block;
+    position: absolute;
+    color: $white;
+    border: 2px solid $white;
+    border-radius: 14px;
+    box-shadow: 0 0 3px $light-black;
+    box-sizing: content-box;
+    text-align: center;
+    font-family: Courier New, Courier, monospace;
+    line-height: 14px;
+    content: "+";
+    background-color: $open-button-background
+}
+
+table.dataTable.dtr-column>tbody>tr.parent td.control:before,
+table.dataTable.dtr-column>tbody>tr.parent th.control:before {
+    content: "-";
+    background-color: $close-button-background
+}
+
+table.dataTable>tbody>tr.child {
+    padding: .5em 1em
+}
+
+table.dataTable>tbody>tr.child:hover {
+    background: transparent!important
+}
+
+table.dataTable>tbody>tr.child ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+table.dataTable>tbody>tr.child ul li {
+    //border-bottom: 1px solid #efefef;
+    padding: .5em 0
+}
+
+table.dataTable>tbody>tr.child ul li:first-child {
+    padding-top: 0
+}
+
+table.dataTable>tbody>tr.child ul li:last-child {
+    //border-bottom: none
+}
+
+table.dataTable>tbody>tr.child span.dtr-title {
+    display: inline-block;
+    min-width: 75px;
+    font-weight: 700
+}
+
+@media screen and (max-width:767px) {
+    table.dataTable>tbody>tr>td:first-child {
+        padding-left: 30px!important
+    }
+}
+
+@media (min-width:520px) and (max-width:730px) {
+    table.dataTable .btn-simple.btn-icon {
+        display: block;
+        margin: 0
+    }
+}
+
+.pagination .page-item .page-link {
+    border: 0;
+    border-radius: 30px!important;
+    transition: all .3s;
+    margin: 0 3px;
+    min-width: 30px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    background-color: initial;
+}
+
+.pagination .page-item .page-link:focus,
+.pagination .page-item .page-link:hover {
+    color: $black-color;
+    background-color: hsla(0, 0%, 60%, .3);
+    border: none;
+}
+
+.pagination .arrow-margin-left,
+.pagination .arrow-margin-right {
+    position: absolute;
+}
+
+.pagination .arrow-margin-right {
+    right: 0;
+}
+
+.pagination .arrow-margin-left {
+    left: 0;
+}
+
+.pagination .page-item .page-link {
+    padding: 0 11px;
+    color: $black-color;
+    font-size: 14px;
+}
+
+.pagination .page-item.active>.page-link {
+    color: $white;
+    box-shadow: $box-shadow;
+}
+
+.pagination .page-item.active>.page-link,
+.pagination .page-item.active>.page-link:focus,
+.pagination .page-item.active>.page-link:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white;
+}
+
+.pagination .page-item.disabled>.page-link {
+    opacity: .5;
+}
+
+.pagination.pagination-info .page-item.active>.page-link,
+.pagination.pagination-info .page-item.active>.page-link:focus,
+.pagination.pagination-info .page-item.active>.page-link:hover {
+    background-color: $info-color;
+    border-color: $info-color;
+}
+
+.pagination.pagination-success .page-item.active>.page-link,
+.pagination.pagination-success .page-item.active>.page-link:focus,
+.pagination.pagination-success .page-item.active>.page-link:hover {
+    background-color: $success-color;
+    border-color: $success-color;
+}
+
+.pagination.pagination-primary .page-item.active>.page-link,
+.pagination.pagination-primary .page-item.active>.page-link:focus,
+.pagination.pagination-primary .page-item.active>.page-link:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.pagination.pagination-warning .page-item.active>.page-link,
+.pagination.pagination-warning .page-item.active>.page-link:focus,
+.pagination.pagination-warning .page-item.active>.page-link:hover {
+    background-color: $warning-color;
+    border-color: $warning-color;
+}
+
+.pagination.pagination-danger .page-item.active>.page-link,
+.pagination.pagination-danger .page-item.active>.page-link:focus,
+.pagination.pagination-danger .page-item.active>.page-link:hover {
+    background-color: $danger-color;
+    border-color: $danger-color;
+}
+
+.pagination.pagination-neutral .page-item>.page-link {
+    color: $white;
+}
+
+.pagination.pagination-neutral .page-item>.page-link:focus,
+.pagination.pagination-neutral .page-item>.page-link:hover {
+    background-color: hsla(0, 0%, 100%, .2);
+    color: $white;
+}
+
+.pagination.pagination-neutral .page-item.active>.page-link,
+.pagination.pagination-neutral .page-item.active>.page-link:focus,
+.pagination.pagination-neutral .page-item.active>.page-link:hover {
+    background-color: $white;
+    border-color: $white;
+    color: $primary-color;
+}
+
+.table > thead > tr > th {
+    font-weight: 600;
+}
